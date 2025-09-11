@@ -27,7 +27,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-foreground mb-4 animate-fade-in-up">
-              Aqui você chega linda e sai <span className="text-primary font-semibold">Belíssima</span>
+              Aqui você chega linda e sai <span className="text-foreground font-semibold">Belíssima</span>
             </p>
             
             <p className="text-lg md:text-xl text-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up">
