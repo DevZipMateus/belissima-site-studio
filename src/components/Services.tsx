@@ -58,7 +58,7 @@ const Services = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div key={index} className="card-elegant service-card">
+              <div key={index} className="group card-elegant service-card">
                 <div className="text-center mb-6">
                   <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-8 w-8 text-primary" />
