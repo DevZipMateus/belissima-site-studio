@@ -49,8 +49,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Endereço</h4>
-                    <p className="text-muted-foreground">Avenida João Mafessoni, 20</p>
-                    <p className="text-muted-foreground">Caxias do Sul, RS</p>
+                    <p className="text-muted-foreground">R. João Mafessoni, 20</p>
+                    <p className="text-muted-foreground">Constantina, RS - 99680-000</p>
                   </div>
                 </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
             {/* Map */}
             <div className="bg-muted/30 rounded-2xl p-4 h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.123456789!2d-51.179388!3d-29.168388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDEwJzA2LjIiUyA1McKwMTAnNDUuOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d-52.983!3d-27.733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQzJzU4LjgiUyA1MsKwNTgnNTguOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: "12px" }}

@@ -31,8 +31,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Avenida João Mafessoni, 20</p>
-                  <p>Caxias do Sul, RS</p>
+                  <p>R. João Mafessoni, 20</p>
+                  <p>Constantina, RS - 99680-000</p>
                 </div>
               </div>
               
