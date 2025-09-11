@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 md:p-12">
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-in-up text-foreground">
-              <span className="text-gradient">Belíssima</span> Aluguéis
+              <span className="text-foreground">Belíssima</span> Aluguéis
             </h1>
             
             <p className="text-xl md:text-2xl text-foreground mb-4 animate-fade-in-up">
