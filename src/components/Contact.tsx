@@ -102,7 +102,7 @@ const Contact = () => {
             {/* Map */}
             <div className="bg-muted/30 rounded-2xl p-4 h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d-52.983!3d-27.733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQzJzU4LjgiUyA1MsKwNTgnNTguOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dw901SwHdCUZh4&q=R.+João+Mafessoni,+20,+Constantina,+RS,+99680-000,+Brazil"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: "12px" }}
