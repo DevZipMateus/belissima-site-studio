@@ -23,20 +23,14 @@ const Header = () => {
   };
 
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md shadow-lg transition-all duration-300">
       <nav className="section-container py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <img 
-              src="/logo-belissima.png" 
-              alt="Belíssima Aluguéis - Aluguel de vestidos de noiva e trajes especiais"
-              className="h-12 w-auto"
-            />
+          {/* Nome da empresa */}
+          <div className="flex items-center">
+            <h2 className="text-2xl font-serif font-bold text-foreground">
+              Belíssima Aluguéis
+            </h2>
           </div>
 
           {/* Desktop Navigation */}
