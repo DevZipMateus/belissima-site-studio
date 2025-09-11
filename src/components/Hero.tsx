@@ -21,34 +21,36 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 section-container text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-in-up text-foreground">
-            <span className="text-gradient">Belíssima</span> Aluguéis
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-foreground mb-4 animate-fade-in-up">
-            Aqui você chega linda e sai <span className="text-primary font-semibold">Belíssima</span>
-          </p>
-          
-          <p className="text-lg md:text-xl text-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up">
-            Aluguel de vestidos de noivas, madrinhas, formandas e trajes especiais com consultoria de cores personalizada
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up">
-            <button
-              onClick={scrollToServices}
-              className="btn-hero"
-            >
-              Conheça Nossos Serviços
-            </button>
+          <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 md:p-12">
+            <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-in-up text-foreground">
+              <span className="text-gradient">Belíssima</span> Aluguéis
+            </h1>
             
-            <a
-              href="https://wa.me/5554993383866"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-outline-elegant"
-            >
-              Agende sua Consulta
-            </a>
+            <p className="text-xl md:text-2xl text-foreground mb-4 animate-fade-in-up">
+              Aqui você chega linda e sai <span className="text-primary font-semibold">Belíssima</span>
+            </p>
+            
+            <p className="text-lg md:text-xl text-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up">
+              Aluguel de vestidos de noivas, madrinhas, formandas e trajes especiais com consultoria de cores personalizada
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up">
+              <button
+                onClick={scrollToServices}
+                className="btn-hero"
+              >
+                Conheça Nossos Serviços
+              </button>
+              
+              <a
+                href="https://wa.me/5554993383866"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline-elegant"
+              >
+                Agende sua Consulta
+              </a>
+            </div>
           </div>
         </div>
       </div>
