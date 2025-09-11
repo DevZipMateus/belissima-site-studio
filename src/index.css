@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Belíssima Aluguéis Design System - Elegant & Sophisticated */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
+    /* Background colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 45 5% 15%;
 
+    /* Card colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 45 5% 15%;
 
+    /* Popover colors */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 45 5% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Golden primary palette */
+    --primary: 43 74% 49%;        /* Rich gold */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 43 74% 85%;   /* Light gold */
+    --primary-dark: 43 74% 35%;    /* Deep gold */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Rosé secondary palette */
+    --secondary: 350 47% 85%;      /* Soft rosé */
+    --secondary-foreground: 45 5% 15%;
+    --secondary-dark: 350 47% 70%; /* Deeper rosé */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Olive accent palette */
+    --accent: 82 25% 35%;          /* Olive green */
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 82 25% 85%;    /* Light olive */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted colors */
+    --muted: 43 20% 96%;
+    --muted-foreground: 45 5% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Utility colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 43 20% 90%;
+    --input: 43 20% 95%;
+    --ring: 43 74% 49%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Design tokens */
+    --radius: 0.75rem;
 
-    --radius: 0.5rem;
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-dark)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-light) / 0.1), hsl(var(--secondary) / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+
+    /* Shadows */
+    --shadow-elegant: 0 8px 32px hsl(var(--primary) / 0.1);
+    --shadow-soft: 0 4px 16px hsl(var(--muted-foreground) / 0.1);
+    --shadow-gold: 0 8px 32px hsl(var(--primary) / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +83,31 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 45 5% 8%;
+    --foreground: 0 0% 95%;
+    --card: 45 5% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 45 5% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 43 74% 55%;
+    --primary-foreground: 45 5% 8%;
+    --secondary: 350 47% 20%;
+    --secondary-foreground: 0 0% 95%;
+    --accent: 82 25% 45%;
+    --accent-foreground: 0 0% 95%;
+    --muted: 45 5% 15%;
+    --muted-foreground: 45 5% 65%;
+    --border: 45 5% 20%;
+    --input: 45 5% 15%;
+    --ring: 43 74% 55%;
+    --sidebar-background: 45 5% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 43 74% 55%;
+    --sidebar-primary-foreground: 45 5% 8%;
+    --sidebar-accent: 45 5% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 45 5% 20%;
+    --sidebar-ring: 43 74% 55%;
   }
 }
 
@@ -100,6 +117,92 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  /* Hero button variant */
+  .btn-hero {
+    @apply relative overflow-hidden bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50;
+    background: var(--gradient-primary);
+  }
+
+  .btn-hero:hover {
+    @apply shadow-xl;
+    box-shadow: var(--shadow-gold);
+  }
+
+  /* Outline button variant */
+  .btn-outline-elegant {
+    @apply border-2 border-primary/60 text-primary bg-transparent px-6 py-3 rounded-full font-medium tracking-wide transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  /* Section container */
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Elegant card */
+  .card-elegant {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .card-elegant:hover {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  /* Floating WhatsApp button */
+  .whatsapp-float {
+    @apply fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-50;
+  }
+
+  /* Smooth scroll */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Service card hover effect */
+  .service-card {
+    @apply group cursor-pointer transition-all duration-300 hover:-translate-y-2;
+  }
+
+  /* Custom animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
