@@ -129,18 +129,16 @@
 @layer components {
   /* Hero button variant */
   .btn-hero {
-    @apply relative overflow-hidden bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50;
-    background: var(--gradient-primary);
+    @apply relative overflow-hidden bg-foreground text-background px-8 py-4 rounded-full font-medium tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-foreground/50;
   }
 
   .btn-hero:hover {
-    @apply shadow-xl;
-    box-shadow: var(--shadow-gold);
+    @apply shadow-xl bg-foreground/90;
   }
 
   /* Outline button variant */
   .btn-outline-elegant {
-    @apply border-2 border-primary/60 text-primary bg-transparent px-6 py-3 rounded-full font-medium tracking-wide transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary/50;
+    @apply border-2 border-foreground/60 text-foreground bg-transparent px-6 py-3 rounded-full font-medium tracking-wide transition-all duration-300 hover:bg-foreground hover:text-background hover:border-foreground focus:outline-none focus:ring-2 focus:ring-foreground/50;
   }
 
   /* Section container */
