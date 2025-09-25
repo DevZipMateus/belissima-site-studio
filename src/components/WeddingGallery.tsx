@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const WeddingGallery = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const images = [
     "/fotos e video/3A239AA76C3F7D922D5B.jpeg",
     "/fotos e video/3A37C9D52F0E5D3387B2.jpeg", 
@@ -21,18 +24,26 @@ const WeddingGallery = () => {
       <div className="section-container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
           {images.map((image, index) => (
-            <div
-              key={index}
-              className="group relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <img
-                src={image}
-                alt={`Vestido de casamento ${index + 1}`}
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
+            <Dialog key={index}>
+              <DialogTrigger asChild>
+                <div className="group relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                  <img
+                    src={image}
+                    alt={`Vestido de casamento ${index + 1}`}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+                <img
+                  src={image}
+                  alt={`Vestido de casamento ${index + 1}`}
+                  className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+                />
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
         
