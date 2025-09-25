@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
 import { useState } from "react";
 
 const WeddingGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  // Apenas imagens que existem na pasta
   const images = [
     "/fotos e video/3A239AA76C3F7D922D5B.jpeg",
     "/fotos e video/3A37C9D52F0E5D3387B2.jpeg", 
@@ -13,10 +14,7 @@ const WeddingGallery = () => {
     "/fotos e video/3AB269B852E67798723A.jpeg",
     "/fotos e video/3ABC2000C95A910CE2C1.jpeg",
     "/fotos e video/3ADFC8971AE317074C29.jpeg",
-    "/fotos e video/3AE9F07DE96CFD58338C.jpeg",
-    "/fotos e video/3A020AB602112DF14551.jpeg",
-    "/fotos e video/3A18C79EB0B9FD18AC71.jpeg",
-    "/fotos e video/3AA126DE7E45D3242D42.jpeg"
+    "/fotos e video/3AE9F07DE96CFD58338C.jpeg"
   ];
 
   return (
@@ -37,6 +35,7 @@ const WeddingGallery = () => {
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+                <DialogTitle className="sr-only">Vestido de casamento {index + 1}</DialogTitle>
                 <img
                   src={image}
                   alt={`Vestido de casamento ${index + 1}`}
