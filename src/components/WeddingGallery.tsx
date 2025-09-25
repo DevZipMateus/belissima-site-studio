@@ -11,9 +11,6 @@ const WeddingGallery = () => {
     "/fotos e video/3A5BD2093A1B4022159E.jpeg",
     "/fotos e video/3A5CA863E3FED356B30B.jpeg",
     "/fotos e video/3A7146261E426C78298C.jpeg",
-    "/fotos e video/3AB269B852E67798723A.jpeg",
-    "/fotos e video/3ABC2000C95A910CE2C1.jpeg",
-    "/fotos e video/3ADFC8971AE317074C29.jpeg",
     "/fotos e video/3AE9F07DE96CFD58338C.jpeg"
   ];
 
