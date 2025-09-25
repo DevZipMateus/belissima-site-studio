@@ -6,9 +6,7 @@ const PartyDressGallery = () => {
     "/fotos e video/festa1.jpeg",
     "/fotos e video/festa2.jpeg", 
     "/fotos e video/festa3.jpeg",
-    "/fotos e video/festa4.jpeg",
-    "/fotos e video/festa5.jpeg",
-    "/fotos e video/festa6.jpeg"
+    "/fotos e video/festa4.jpeg"
   ];
 
   return (
