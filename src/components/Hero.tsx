@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-image.jpg";
+
 
 const Hero = () => {
   const scrollToServices = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/fotos e video/3ABC2000C95A910CE2C1.jpeg)` }}
+        style={{ backgroundImage: `url("/fotos e video/3ABC2000C95A910CE2C1.jpeg")` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/30 via-background/20 to-background/10"></div>
       </div>
