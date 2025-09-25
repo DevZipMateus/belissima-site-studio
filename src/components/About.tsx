@@ -34,13 +34,17 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <Sparkles className="h-20 w-20 text-primary mx-auto mb-4" />
-                <p className="text-lg font-serif italic text-muted-foreground">
-                  "Transformando experiência e paixão em momentos únicos"
-                </p>
-              </div>
+            <div className="rounded-3xl overflow-hidden h-96">
+              <video 
+                className="w-full h-full object-cover"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              >
+                <source src="/fotos e video/vestido.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
+              </video>
             </div>
           </div>
         </div>
