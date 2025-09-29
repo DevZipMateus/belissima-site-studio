@@ -1,4 +1,5 @@
 import { Heart, MapPin, Phone, Mail, Clock } from "lucide-react";
+import logoFooter from "@/assets/logo-footer.png";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/logo-belissima.png" 
+                src={logoFooter} 
                 alt="Belíssima Aluguéis"
                 className="h-10 w-auto brightness-0 invert"
               />
