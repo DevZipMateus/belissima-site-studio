@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-[calc(100vh-6rem)] pt-24 flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-float"></div>
+      <div className="absolute top-32 left-10 w-20 h-20 bg-primary/10 rounded-full animate-float"></div>
       <div className="absolute bottom-20 right-10 w-16 h-16 bg-secondary/20 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
       <div className="absolute top-1/2 left-20 w-12 h-12 bg-accent/15 rounded-full animate-float" style={{ animationDelay: "4s" }}></div>
     </section>
