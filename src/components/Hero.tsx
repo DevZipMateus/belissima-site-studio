@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-6rem)] pt-16 sm:pt-20 md:pt-24 flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-6rem)] pt-16 sm:pt-20 md:pt-24 flex items-center justify-center overflow-hidden w-full">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -19,9 +19,9 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 section-container text-center">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12">
+      <div className="relative z-10 section-container text-center w-full">
+        <div className="max-w-4xl mx-auto w-full">
+          <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 w-full">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold mb-4 md:mb-6 animate-fade-in-up text-foreground">
               <span className="text-foreground">Belíssima</span> Aluguéis
             </h1>
