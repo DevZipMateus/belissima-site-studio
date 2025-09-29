@@ -32,7 +32,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Belíssima Aluguéis" 
-              className="h-12 w-auto"
+              className="h-24 w-auto"
             />
           </div>
 
