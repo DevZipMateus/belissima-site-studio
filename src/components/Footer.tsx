@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={logoFooter} 
                 alt="Belíssima Aluguéis"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-16 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-background/80 mb-4 leading-relaxed">
