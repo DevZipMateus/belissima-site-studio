@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo-belissima.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,11 +27,13 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md shadow-lg transition-all duration-300">
       <nav className="section-container py-4">
         <div className="flex items-center justify-between">
-          {/* Nome da empresa */}
+          {/* Logo da empresa */}
           <div className="flex items-center">
-            <h2 className="text-2xl font-serif font-bold text-foreground">
-              Belíssima Aluguéis
-            </h2>
+            <img 
+              src={logo} 
+              alt="Belíssima Aluguéis" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
