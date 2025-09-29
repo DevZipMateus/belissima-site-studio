@@ -3,57 +3,57 @@ import logoFooter from "@/assets/logo-footer.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-12">
+    <footer className="bg-foreground text-background py-8 sm:py-10 lg:py-12">
       <div className="section-container">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-6 lg:mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-2 mb-3 lg:mb-4">
               <img 
                 src={logoFooter} 
                 alt="Belíssima Aluguéis"
-                className="h-16 w-auto brightness-0 invert"
+                className="h-12 sm:h-14 lg:h-16 w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-background/80 mb-4 leading-relaxed">
+            <p className="text-background/80 mb-3 lg:mb-4 leading-relaxed text-sm sm:text-base">
               Realizando sonhos desde 2022 através de vestidos e trajes especiais. 
               Aqui você chega linda e sai Belíssima.
             </p>
             <div className="flex items-center space-x-2 text-background/80">
-              <Heart className="h-4 w-4 text-primary" />
-              <span className="text-sm italic">Vestir sonhos é nossa vocação</span>
+              <Heart className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
+              <span className="text-xs sm:text-sm italic">Vestir sonhos é nossa vocação</span>
             </div>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-serif font-semibold mb-4">Contato</h3>
-            <div className="space-y-3 text-background/80">
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+            <h3 className="text-base sm:text-lg font-serif font-semibold mb-3 lg:mb-4">Contato</h3>
+            <div className="space-y-2 lg:space-y-3 text-background/80">
+              <div className="flex items-start space-x-2 lg:space-x-3">
+                <MapPin className="h-4 w-4 lg:h-5 lg:w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>R. João Mafessoni, 20</p>
-                  <p>Constantina, RS - 99680-000</p>
+                  <p className="text-xs sm:text-sm">R. João Mafessoni, 20</p>
+                  <p className="text-xs sm:text-sm">Constantina, RS - 99680-000</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+              <div className="flex items-center space-x-2 lg:space-x-3">
+                <Phone className="h-4 w-4 lg:h-5 lg:w-5 text-primary flex-shrink-0" />
                 <a 
                   href="https://wa.me/5554993383866"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors text-xs sm:text-sm"
                 >
                   (54) 99338-3866
                 </a>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary flex-shrink-0" />
+              <div className="flex items-center space-x-2 lg:space-x-3">
+                <Mail className="h-4 w-4 lg:h-5 lg:w-5 text-primary flex-shrink-0" />
                 <a 
                   href="mailto:belissimaalugueis@gmail.com"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors text-xs sm:text-sm break-all"
                 >
                   belissimaalugueis@gmail.com
                 </a>
@@ -63,30 +63,30 @@ const Footer = () => {
 
           {/* Business Hours */}
           <div>
-            <h3 className="text-lg font-serif font-semibold mb-4">Horário de Funcionamento</h3>
-            <div className="space-y-3 text-background/80">
-              <div className="flex items-start space-x-3">
-                <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+            <h3 className="text-base sm:text-lg font-serif font-semibold mb-3 lg:mb-4">Horário de Funcionamento</h3>
+            <div className="space-y-2 lg:space-y-3 text-background/80">
+              <div className="flex items-start space-x-2 lg:space-x-3">
+                <Clock className="h-4 w-4 lg:h-5 lg:w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Segunda a Sexta</p>
-                  <p className="font-medium">8:30h às 18:00h</p>
+                  <p className="text-xs sm:text-sm">Segunda a Sexta</p>
+                  <p className="font-medium text-xs sm:text-sm">8:30h às 18:00h</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3">
-                <Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+              <div className="flex items-start space-x-2 lg:space-x-3">
+                <Clock className="h-4 w-4 lg:h-5 lg:w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Sábado</p>
-                  <p className="font-medium">8:30h às 11:00h</p>
+                  <p className="text-xs sm:text-sm">Sábado</p>
+                  <p className="font-medium text-xs sm:text-sm">8:30h às 11:00h</p>
                 </div>
               </div>
               
-              <div className="mt-4">
+              <div className="mt-3 lg:mt-4">
                 <a
                   href="https://wa.me/5554993383866"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium hover:bg-primary-dark transition-colors"
+                  className="inline-block bg-primary text-primary-foreground px-4 sm:px-6 py-2 rounded-full font-medium hover:bg-primary-dark transition-colors text-xs sm:text-sm"
                 >
                   Agendar Visita
                 </a>
@@ -96,17 +96,17 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-background/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-background/60 text-sm">
+        <div className="border-t border-background/20 pt-6 lg:pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
+            <div className="text-background/60 text-xs sm:text-sm text-center md:text-left">
               <p>&copy; 2024 Belíssima Aluguéis Ltda. Todos os direitos reservados.</p>
               <p className="mt-1">CNPJ: 46.776.467/0001-29</p>
             </div>
             
-            <div className="text-background/60 text-sm text-center md:text-right">
+            <div className="text-background/60 text-xs sm:text-sm text-center md:text-right">
               <p>Desenvolvido com</p>
               <div className="flex items-center justify-center md:justify-end space-x-1 mt-1">
-                <Heart className="h-4 w-4 text-primary" />
+                <Heart className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
                 <span>para realizar sonhos</span>
               </div>
             </div>

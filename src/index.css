@@ -66,19 +66,12 @@
     --transition-elegant: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -127,28 +120,28 @@
 }
 
 @layer components {
-  /* Hero button variant */
+  /* Section container - Better responsive padding */
+  .section-container {
+    @apply max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8;
+  }
+
+  /* Hero button variant - Better mobile sizing */
   .btn-hero {
-    @apply relative overflow-hidden bg-foreground text-background px-8 py-4 rounded-full font-medium tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-foreground/50;
+    @apply relative overflow-hidden bg-foreground text-background px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-foreground/50 text-sm sm:text-base;
   }
 
   .btn-hero:hover {
     @apply shadow-xl bg-foreground/90;
   }
 
-  /* Outline button variant */
+  /* Outline button variant - Better mobile sizing */
   .btn-outline-elegant {
-    @apply border-2 border-foreground/60 text-foreground bg-transparent px-6 py-3 rounded-full font-medium tracking-wide transition-all duration-300 hover:bg-foreground hover:text-background hover:border-foreground focus:outline-none focus:ring-2 focus:ring-foreground/50;
+    @apply border-2 border-foreground/60 text-foreground bg-transparent px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium tracking-wide transition-all duration-300 hover:bg-foreground hover:text-background hover:border-foreground focus:outline-none focus:ring-2 focus:ring-foreground/50 text-sm sm:text-base;
   }
 
-  /* Section container */
-  .section-container {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-
-  /* Elegant card */
+  /* Elegant card - Better mobile padding */
   .card-elegant {
-    @apply bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg;
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 rounded-xl lg:rounded-2xl p-4 sm:p-6 transition-all duration-300 hover:shadow-lg;
     box-shadow: var(--shadow-soft);
   }
 
@@ -158,7 +151,7 @@
 
   /* Floating WhatsApp button */
   .whatsapp-float {
-    @apply fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-50;
+    @apply fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-green-500 text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-50;
   }
 
   /* Smooth scroll */
@@ -176,7 +169,7 @@
 
   /* Service card hover effect */
   .service-card {
-    @apply cursor-pointer transition-all duration-300 hover:-translate-y-2;
+    @apply cursor-pointer transition-all duration-300 hover:-translate-y-1 lg:hover:-translate-y-2;
   }
 
   /* Custom animations */
@@ -202,5 +195,13 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Additional responsive utilities */
+@media (max-width: 640px) {
+  .text-gradient {
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.1;
   }
 }

@@ -12,11 +12,11 @@ const PartyDressGallery = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="section-container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-8 lg:mb-12">
           {images.map((image, index) => (
             <Dialog key={index}>
               <DialogTrigger asChild>
-                <div className="group relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+                <div className="group relative aspect-[3/4] overflow-hidden rounded-xl lg:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
                   <img
                     src={image}
                     alt={`Vestido de festa ${index + 1}`}
@@ -26,7 +26,7 @@ const PartyDressGallery = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </DialogTrigger>
-              <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+              <DialogContent className="max-w-[95vw] sm:max-w-4xl w-full p-0 bg-transparent border-none">
                 <DialogTitle className="sr-only">Vestido de festa {index + 1}</DialogTitle>
                 <img
                   src={image}

@@ -15,28 +15,28 @@ const About = () => {
         </div>
 
         {/* Story */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="space-y-6">
-            <h3 className="text-3xl font-serif font-semibold text-foreground">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16 lg:mb-20">
+          <div className="space-y-4 lg:space-y-6 order-2 lg:order-1">
+            <h3 className="text-2xl sm:text-3xl font-serif font-semibold text-foreground">
               Como Nasceu a Belíssima
             </h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               A Belíssima Noivas e Aluguéis nasceu no início de 2022, fruto da união de duas sócias que 
               decidiram transformar experiência e paixão em um projeto em comum. Uma delas já atuava na 
               área e, percebendo a oportunidade de crescimento, surgiu a necessidade de expandir o negócio 
               através da sociedade.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               Desde então, a Belíssima tem se dedicado a realizar sonhos, oferecendo qualidade, confiança 
               e um atendimento diferenciado para cada cliente, transformando momentos importantes em 
               memórias inesquecíveis.
             </p>
           </div>
           
-          <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-lg">
+          <div className="relative order-1 lg:order-2">
+            <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg">
               <video
-                className="w-full h-96 object-cover"
+                className="w-full h-64 sm:h-80 lg:h-96 object-cover"
                 autoPlay
                 muted
                 loop
@@ -69,51 +69,51 @@ const About = () => {
             Nossos Valores
           </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             <div className="card-elegant text-center service-card">
-              <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h4 className="text-xl font-serif font-semibold mb-3">Compromisso com o Cliente</h4>
-              <p className="text-muted-foreground">
+              <Heart className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg sm:text-xl font-serif font-semibold mb-3">Compromisso com o Cliente</h4>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Confiança e acolhimento em cada detalhe
               </p>
             </div>
 
             <div className="card-elegant text-center service-card">
-              <Award className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h4 className="text-xl font-serif font-semibold mb-3">Excelência</h4>
-              <p className="text-muted-foreground">
+              <Award className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg sm:text-xl font-serif font-semibold mb-3">Excelência</h4>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Qualidade em produtos e serviços
               </p>
             </div>
 
             <div className="card-elegant text-center service-card">
-              <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h4 className="text-xl font-serif font-semibold mb-3">Ética</h4>
-              <p className="text-muted-foreground">
+              <Users className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg sm:text-xl font-serif font-semibold mb-3">Ética</h4>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Transparência e responsabilidade
               </p>
             </div>
 
             <div className="card-elegant text-center service-card">
-              <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h4 className="text-xl font-serif font-semibold mb-3">Inovação</h4>
-              <p className="text-muted-foreground">
+              <Sparkles className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg sm:text-xl font-serif font-semibold mb-3">Inovação</h4>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Criatividade e atualização constante
               </p>
             </div>
 
             <div className="card-elegant text-center service-card">
-              <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h4 className="text-xl font-serif font-semibold mb-3">Paixão</h4>
-              <p className="text-muted-foreground">
+              <Heart className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg sm:text-xl font-serif font-semibold mb-3">Paixão</h4>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Vestir sonhos é nossa vocação
               </p>
             </div>
 
             <div className="card-elegant text-center service-card">
-              <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h4 className="text-xl font-serif font-semibold mb-3">Diversidade</h4>
-              <p className="text-muted-foreground">
+              <Users className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg sm:text-xl font-serif font-semibold mb-3">Diversidade</h4>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Toda mulher é única e merece se sentir especial
               </p>
             </div>
