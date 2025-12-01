@@ -13,7 +13,7 @@ const ServicePhotosGallery = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="section-container">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 mb-8 lg:mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-8 lg:mb-12">
           {images.map((image, index) => (
             <Dialog key={index}>
               <DialogTrigger asChild>
