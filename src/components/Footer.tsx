@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-6 lg:mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-3 lg:mb-4">
+            <div className="flex items-center space-x-2 mb-3 lg:mb-4 overflow-hidden h-8 sm:h-10 lg:h-12">
               <img 
                 src={logoFooter} 
                 alt="Belíssima Aluguéis"
-                className="h-12 sm:h-14 lg:h-16 w-auto brightness-0 invert"
+                className="h-16 sm:h-18 lg:h-20 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-background/80 mb-3 lg:mb-4 leading-relaxed text-sm sm:text-base">
