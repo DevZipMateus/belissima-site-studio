@@ -28,11 +28,11 @@ const Header = () => {
       <nav className="section-container py-4">
         <div className="flex items-center justify-between">
           {/* Logo da empresa */}
-          <div className="flex items-center">
+          <div className="flex items-center overflow-hidden h-10 sm:h-12 md:h-14">
             <img 
               src={logo} 
               alt="Belíssima Aluguéis" 
-              className="h-16 sm:h-20 md:h-24 w-auto"
+              className="h-14 sm:h-18 md:h-20 w-auto"
             />
           </div>
 
