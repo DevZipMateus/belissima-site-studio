@@ -80,47 +80,6 @@ const Services = () => {
           })}
         </div>
 
-        {/* Photo Gallery */}
-        <div className="mb-12 lg:mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
-            <div className="rounded-xl lg:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/fotos e video/servico-1.jpeg"
-                alt="Vestido de festa verde esmeralda com brilho"
-                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="rounded-xl lg:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/fotos e video/servico-2.jpeg"
-                alt="Vestido de festa verde esmeralda - costas"
-                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="rounded-xl lg:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/fotos e video/servico-3.jpeg"
-                alt="Vestido de festa cinza com brilho"
-                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="rounded-xl lg:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="/fotos e video/servico-4.jpeg"
-                alt="Vestido de festa cinza bordado - frente"
-                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="rounded-xl lg:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 col-span-2 md:col-span-1">
-              <img
-                src="/fotos e video/servico-5.jpeg"
-                alt="Vestido de festa azul claro com fenda"
-                className="w-full h-full object-cover aspect-[3/4] hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Consultation CTA */}
         <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-2xl lg:rounded-3xl p-6 md:p-8 lg:p-12 text-center">
           <div className="max-w-3xl mx-auto">
