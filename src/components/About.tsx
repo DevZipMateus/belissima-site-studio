@@ -51,6 +51,22 @@ const About = () => {
           </div>
         </div>
 
+        {/* Founders Photo */}
+        <div className="mb-16 lg:mb-20">
+          <div className="max-w-2xl mx-auto">
+            <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg">
+              <img
+                src="/fotos e video/socias.jpeg"
+                alt="Sócias proprietárias da Belíssima Noivas e Aluguéis"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <p className="text-center text-muted-foreground mt-4 text-sm sm:text-base italic">
+              Nossas Fundadoras
+            </p>
+          </div>
+        </div>
+
         {/* Mission */}
         <div className="text-center mb-16">
           <h3 className="text-3xl font-serif font-semibold mb-6 text-foreground">
